@@ -1,0 +1,18 @@
+#int_right
+  #int_rightContent
+    %h1 
+      Articles
+    %br
+    -@articles.each do |article|
+      %h2=article.title
+      %p
+        %b Authors:
+        =article.authors
+        %p
+        %b Description:
+        =article.description
+        %p
+        = link_to "Download", {:action => :download_article, :id => article.id}
+      %hr
+      
+      %br

@@ -1,0 +1,341 @@
+/* CSS Document */
+/* Catapult Dental Portal */
+
+body {
+	margin: 0px;
+	background-color: #e1e1e1;
+	color: #0053a0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+a {
+	color: #0053a0;
+}
+
+a:hover {
+	color: #51ABA9;
+}
+
+h1 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #0053a0;
+	margin-bottom: 0px;
+}
+
+#container {
+	width: 1044px;
+	margin: auto auto;
+	overflow: hidden;
+}
+
+#header {
+	background-image: url(../images/header.jpg);
+	background-repeat: no-repeat;
+	width: 1044px;
+	height: 147px;
+}
+
+#headText {
+	float: left;
+	width: 415px;
+	height: 50px;
+	margin: 50px 0 0 270px;
+	_margin: 60px 0 0 140px;
+}
+
+#login_form {
+	float: right;
+	width: 220px;
+	height: 50px;
+	margin: 50px 50px 0 0;
+	_margin: 50px 25px 0 0;
+}
+
+#login_error_message {
+	font-size: 10px;
+	color: red;
+}
+
+.smallText {
+	font-size: 10px;
+}
+
+.mediumText {
+	font-size: 12px;
+}
+
+.why_join_spacer {
+	height: 5px;
+}
+.product_review_spacer{
+	height: 36px;
+}
+
+#order_samples_box{
+	position: absolute;
+	top: 681px;
+	width: 200px;
+}
+
+#product_review_box{
+	position: absolute; 
+	top: 470px;
+	width: 200px;
+}
+
+#login_form_text {
+	margin-top: -20px !ie;
+}
+
+#navWrapper {
+	float: left;
+	width: 1044px;
+	height: 30px;
+	background-image: url(../images/dtc_layout_02.jpg);
+	background-repeat: repeat-y;
+	_margin-top: -10px;
+}
+
+#nav {
+	margin-left: auto;
+	margin-right: auto;
+	height: 30px;
+	text-align: center;
+	width: 1044px;
+}
+
+#nav ul {
+	text-indent: -35px;
+	margin: 6px 0 0 0;
+}
+
+#nav li {
+	display: inline;
+	list-style: none;
+}
+
+#nav a {
+	font-size: 14px;
+	font-weight: bold;
+	color: #51ABA9;
+	padding: 0px 15px 0 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	color: #0056A4;
+}
+
+#content {
+	width: 1044px;
+	background-image: url(../images/content_background.jpg); 
+}
+
+#registration_page {
+	margin: 0 40px 0 40px;
+}
+
+#left {
+	background-image: url(../images/dtc_layout_03.jpg); 
+	background-repeat: no-repeat;
+	width: 248px;
+    min-height: 800px;
+	float: left;
+}
+
+#left ul {
+	padding:0 0 0 15px;
+	margin:0;
+}
+
+#left img {
+	float: right;
+	margin: -3px 0 0 2px;
+}
+
+#box1_left {
+	float: right;
+	width: 180px;
+	height: 240px;
+	margin: 10px 20px 0 0;
+	margin: 20px 20px 0 0 !ie;
+	_margin: 20px 10px 0 0;
+}
+
+#box2_left {
+	float: right;
+	width: 175px;
+	height: 130px;
+	margin: 25px 20px 0 0;
+	_margin: 25px 12px 0 0;
+}
+
+#box3_left {
+	float: right;
+	width: 175px;
+	height: 190px;
+	margin: 25px 20px 0 0;
+	_margin: 25px 12px 0 0;
+}
+
+.boxText {
+	font-size: 12px;
+}
+
+#middle {
+	width: 544px;
+	height: 418px;
+	float: left;
+    background-color: white;
+}
+
+#middleTop {
+	width: 544px;
+	height: 275px;
+    background-color: white;
+    margin-left: 7px;    
+}
+
+#intro_player {
+  width: 500px;
+  height: 261px;
+    background-color: white;
+    margin-left: 55px;
+}
+
+.player {
+	display: block;
+	float: left;
+	border: 1px solid black;
+	background-image:url(/images/player_splash.png);
+}
+
+#middleBottom {
+	width: 544px;
+	height: 370px;
+	background-image: url(../images/lab_corner.jpg);
+}
+
+#middleBottom h1 {
+	padding-top: 30px;
+	padding-left: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#middleBottom img{
+	clear:both;
+	float:right;
+	margin-top: -30px;
+	padding-right:50px;
+}
+
+#lab_partners img{
+	margin: 0;
+	padding: 0;
+}
+
+#biodental_content{
+	font-size: 12px;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#biodental_content a{
+	padding-left: 30px;
+}
+
+#right {
+	background-image: url(../images/dtc_layout_05.jpg);
+	background-repeat: no-repeat;
+	width: 252px;
+	height: 656px;
+	float: right;
+}
+
+#right ul {
+	padding:0 0 0 15px;
+	margin:0;
+}
+
+
+#right img {
+	float: right;
+	margin: -3px 0 0 2px;
+}
+
+#box1_right {
+	float: left;
+	width: 180px;
+	height: 240px;
+	margin: 10px 0 0 20px;
+	margin: 20px 0 0 20px !ie;
+	_margin: 20px 0 0 10px;
+}
+
+#box2_right {
+	float: left;
+	width: 175px;
+	height: 130px;
+	margin: 57px 0 0 25px;
+	_margin: 57px 0 0 25px;
+}
+
+#box3_right {
+	float: left;
+	width: 175px;
+	height: 190px;
+	margin: 70px 0 0 25px;
+	_margin: 70px 0 0 25px;
+}
+
+#footer {
+	clear: both;
+	padding-top: 10px;
+	text-align: center;
+    background-image: url(../images/footer_background.jpg);
+    background-repeat: no-repeat;
+}
+
+#footer ul {
+	text-indent: -35px;
+}
+
+#footer li {
+	display: inline;
+}
+
+#footer a {
+	padding: 0 5px 0 5px;
+	color: #0053a0;
+}
+
+#footer a:hover {
+	color: #51ABA9;
+}
+
+#banner_arrows {
+  margin-left: 90%;
+}
+
+#fatal_error {
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  width: 1000px;
+  margin-left:20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#error {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 5px;
+}

@@ -1,0 +1,30 @@
+#intMiddle_bottom
+  #int_admin
+    #int_adminTop
+      #int_adminTitle= link_to "Admin", :controller => '/admin', :action => 'index'
+      #int_adminLeft
+        %h5 Article
+        =link_to "New", :action => :new        
+    #int_adminMiddle
+      #int_adminContent
+        %table#box-table-a{:align => "center"}
+          %tr
+            %th Title
+            %th Authors
+            %th Description
+            %th Created at
+            %th Actions
+          - if !flash[:green].nil?
+            %tr
+              %td.flash_green{:colspan => 5}= flash[:green]
+          - @articles.each do |article|
+            %tr
+              %td=article.title
+              %td=article.authors
+              %td=article.description
+              %td=article.created_at
+              %td
+                =link_to "Edit", {:action => :edit, :id => article.id}
+                =link_to "Delete", {:action => 'delete', :id => article.id}, :confirm => "Are you sure you want to delete the article?", :method => :put
+              
+    #int_adminBottom

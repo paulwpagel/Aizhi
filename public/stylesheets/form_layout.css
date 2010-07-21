@@ -1,0 +1,59 @@
+#int_formContent, #int_subFormContent {
+	float: left;
+	width: 700px;
+	margin: 0 0 0 40px;
+	font-size: 12px;
+}
+#int_formContent {
+	min-height: 678px;
+}
+#int_formLeft {
+	float: left;
+	width: 100px;
+}
+#int_formMid {
+	float: left;
+	width: 300px;
+}
+#int_formRight {
+	float: left;
+}
+#int_formInput {
+    height: 40px;
+}
+#int_formTextArea {
+  height: 100px;
+}
+#int_formRichTextArea {
+  height: 130px;  
+}
+
+table.register_form {
+  width: 100%;
+}
+
+p.label {
+    margin-top: 7px;
+    margin-bottom: 25px;
+}
+p.labelTextArea {
+    margin-top: 7px;
+    margin-bottom: 85px;
+}
+p.labelRichTextArea {
+    margin-top: 7px;
+    margin-bottom: 115px;
+}
+p.label2lines {
+    margin-top: 7px;
+    margin-bottom: 13px;
+}
+div.formError {
+    color: red;
+}
+div.errorExplanation {
+    color: red;
+}
+div.errorExplanation li {
+    list-style:none;
+}

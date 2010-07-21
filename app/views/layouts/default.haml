@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %meta{:content => 'text/html; charset=utf-8', 'http-equiv' => 'Content-Type'}
+    %title Aizhi
+    = stylesheet_link_tag 'main.css', 'pagination.css', 'admin_layout.css', 'int_layout.css', 'form_layout.css',  :media => 'screen, print'
+    = stylesheet_link_tag 'print.css', :media => 'print'
+    
+    = stylesheet_link_tag 'jquery-ui-1.8.1.custom.css'
+    / [if IE]
+      %link{:href => '/stylesheets/ie.css', :media => 'screen, projection', :rel => :stylesheet, :type => 'text/css'}  
+    = javascript_include_tag 'jquery-1.4.2.min.js'
+    = javascript_include_tag 'jquery-ui-1.8.1.custom.min.js'
+    / use 'jQuery' rather than '$' to access jQuery functions
+    :javascript
+      jQuery.noConflict(); 
+    = javascript_include_tag :defaults
+  %body
+    .pagecontainer
+      = render :partial => 'shared/left_nav'
+      .content
+        .tabcontentstyle_top
+        .tabcontentstyle
+          .main_content
+            = @content_for_layout
+        .tabcontentstyle_bottom    
+          %p#Copyright
+            Copyright&nbsp;&nbsp;© 2010&nbsp;by:&nbsp;
+            %b Aizhi
+            All Rights Reserved.
+            %br

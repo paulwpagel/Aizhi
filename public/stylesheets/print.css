@@ -1,0 +1,17 @@
+#logo,
+#maintab,
+#my_menu,
+#footer,
+.ce_certificate .print_certificate,
+.ce_failure_notice .print_failure_notice {
+  display: none;
+}
+
+.pagecontainer > .content {
+  padding: 0;
+}
+
+.tabcontentstyle {
+  border: none;
+  background: none;
+}

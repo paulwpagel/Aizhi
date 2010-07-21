@@ -1,0 +1,616 @@
+/* clearfix taken from http://www.positioniseverything.net/easyclearing.html */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+a img {
+	border: 0px;
+}
+
+h1{
+	margin:0px;
+	font-size:24pt; 
+	font-weight:bold;
+	color: #62b5d4;	
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/* for IE/Mac */
+
+/* Basic Structure */
+body {
+	background: url(../images/transparent-logo.png) no-repeat left top #89cbdf;
+	color: #0068ac;	
+}
+
+th {
+	text-align: left;
+}
+
+th.actions {
+	text-align: center;
+}
+
+.bottommenu {
+	background: #f5f5f5;
+ 	border: 2px solid #f1f1f1;
+	text-align: center;
+	margin: 10px auto;
+	padding: 5px 20px;
+}
+
+#login {
+	height: 259px;
+	width: 466px;
+	background: url(../images/design/login.png) no-repeat;
+	color: white;
+}
+
+#login_form{
+	font-weight: 18pt;
+	margin-left: 91px;
+	margin-top: 20px;
+}
+
+.listing {
+	margin-left: 41px;
+	width: 90%;
+}
+
+.listing th,
+.listing td {
+    padding: 5px;
+}
+
+.listing th {
+    text-align: left;
+    background-color: #00355f;
+    color: white;
+}
+
+.name_header{
+	position: relative;
+	float: left;
+}
+
+.notes {
+	position: relative;
+	float: right;
+	padding: 3px;
+	border: 1px dotted black;
+	width: 30%;
+}
+
+.header_row{
+	height: 100px;
+}
+
+.spacer {
+	clear: both;
+}
+
+.form td {
+    vertical-align: top;
+    padding: .25em;
+}
+
+.form input[type="text"] {
+    width: 425px;
+}
+
+.form textarea,
+.form select {
+    width: 430px;
+}
+
+label {
+    text-transform: capitalize;
+}
+
+.person .view_actions {
+    margin-bottom: 2em;
+}
+
+.person .details {
+    width: 100%;
+}
+
+.person.simple_view .details {
+    display: block; /* .clearfix sets display to inline-block, but we want block so content fills its container */
+}
+
+.person.simple_view .details .ada {
+    display: none;
+}
+
+.person.ada_view .details .ada {
+    display: block;
+}
+
+.person.ada_view .details .our {
+    float: left;
+}
+
+.person.ada_view .details .ada {
+    float: right;
+    color: #555;
+}
+
+.person.ada_view .details .our,
+.person.ada_view .details .ada {
+    width: 49%;
+}
+
+.section {
+    margin-bottom: 2em;
+}
+
+.section .heading,
+.person.ada_view .section .heading {
+    padding: .5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.section .heading {
+    background-color: lightgray;
+}
+
+.person.ada_view .details .ada .section .heading {
+    background-color: #4AB146;
+    color: white;
+}
+
+.section.collapsible > .heading {
+    cursor: pointer;
+    background: lightgray url(../images/toggle.png) no-repeat 10px 50%;
+}
+
+.section.collapsible > .heading.collapsed {
+    background: lightgray url(../images/toggle-expand.png) no-repeat 10px 50%;
+}
+
+.section.collapsible > .content.collapsed {
+    display: none;
+}
+
+.person .name_address {
+    margin-bottom: 1em;
+    padding-left: .25em;
+    text-align: center;
+    font-weight: bold;
+    min-height: 6em;
+}
+
+.person.ada_view .name_address {
+    text-align: left;
+}
+
+.label {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.section th,
+.section td,
+.person.ada_view .section td {
+    padding: .25em;
+}
+
+.section td {
+    border-bottom: 1px solid lightgray;
+}
+
+.person.ada_view .details .ada .section td {
+    border-bottom: 1px solid #4AB146;
+}
+
+.section td.label {
+    width: 15%;
+}
+
+.section td {
+    width: 35%
+}
+
+#histories td{
+	width: auto;
+}
+
+.even {
+    background-color: #62b5d4;
+		color: #FFF;
+}
+
+.errorExplanation {
+	color: red;
+	background-color: #e5e971;
+	border: 1px solid #e5e971;
+}
+
+.odd {
+	background-color: white;
+}
+
+.ce_table td {
+    text-align: center;
+}
+
+form.search table {
+		width: 75%;
+}
+form.search td {
+    width: 33%;
+}
+
+.form_separator {
+    margin: 1em 0;
+    padding: .25em 0;
+    border-top: 1px dotted lightgray;
+    border-bottom: 1px dotted lightgray;
+    width: 27%;
+    text-align: center;
+    font-style: italic;
+    color: darkgray;
+}
+
+.no_results {
+    color: red;
+    font-style: italic;
+    text-align: center;
+}
+
+.credits {
+} 
+
+.logo {
+	height: 230px;
+	width: 230px;
+	margin-left: 15px;
+}
+
+.question_form {
+    margin: 1em 0;
+    padding: 0 1em;
+    border: 1px solid lightgray;
+}
+
+.multiple_choice_question td {
+    vertical-align: top;
+    padding: .25em;
+}
+
+#notice {
+    color: green;
+}
+
+#error_message {
+    color: red;
+    padding-bottom: 10px;
+}
+
+#side_menu{
+	margin-top: 50px	;
+	float:left;
+}
+
+#side_menu_top {
+	margin: 0 0;
+	padding:0;
+	height: 20px;
+	width: 157px;
+  background: url(../images/design/menu_top.png) no-repeat  center;
+  display: block;
+}
+
+.side_menu_link {
+	display: block;
+	padding: 17px 0px;
+}
+
+#side_menu a{
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 0;
+	width: 157px;
+	height: 38px;
+	background: url(../images/design/menu_link.png) no-repeat center;
+	display: block;
+	text-decoration:none	;
+}
+
+#side_menu a:hover{
+	width: 157px;
+	height: 38px;
+  background: #c2dbe8 url(../images/linkarrow.gif) no-repeat  right;
+  color: #2a2c2d;
+  text-decoration: none;
+}
+
+#side_menu_bottom{
+	margin: -1px 0px;
+	padding:0;
+	height: 43px;
+	width: 157px;
+  background: url(../images/design/menu_bottom.png) no-repeat center;
+  display: block;
+}
+
+.tabcontentstyle_top {
+	padding: 0px;
+	margin: 22px 29px 0px 29px;
+	width: 1022px;
+	height: 30px;
+	background: url(../images/design/content_top.png) no-repeat;
+}
+
+.tabcontentstyle {
+	padding: 0px;
+	width: 1021px;
+	min-height: 550px;
+	background:  #FFF;
+	margin: -1px 30px;	
+	float: center;
+}
+
+.tabcontentstyle_bottom {
+	padding-left: 192px;
+	margin: -16px 29px;
+	width: 1022px;
+	height: 30px;
+	background: url(../images/design/content_bottom.png) no-repeat;
+}
+
+.main_content {
+	margin: 0px;
+	padding: 0 30px 0 30px;
+}
+
+.tabcontent {
+	display: none;
+}
+
+.pagecontainer {
+	margin-top: 91px;
+	margin-left:30px;
+	width: 100%;
+}
+
+@media print {
+	.tabcontent {
+		display: block !important;
+	}
+}
+
+.greyed {
+    color: #999;
+    font-style: italic;
+}
+
+.ada_data {
+    color: rgb(74, 177, 70);
+    font-style: italic;
+}
+
+p.links {
+    margin: 0px;
+}
+
+.search_counts {
+    text-align: right;
+}
+
+.person #continuing_educations .actions {
+  white-space: nowrap;
+}
+
+.person #continuing_educations td {
+  width: auto;
+}
+
+.person #continuing_educations th,
+.person #continuing_educations td {
+  padding: .5em;
+}
+
+.continuing_education .result {
+  padding: .5em;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+}
+
+.continuing_education .result.pass {
+  background-color: green;
+}
+
+.continuing_education .result.fail {
+  background-color: red;
+}
+
+.continuing_education .result .score {
+  font-size: 2em;
+}
+
+.continuing_education .result .pass_or_fail {
+  text-transform: uppercase;
+}
+
+.continuing_education .result .actions {
+  margin-top: 1em;
+}
+
+.continuing_education .result .action {
+  margin: 0 .5em;
+}
+
+.continuing_education .result a {
+  color: white;
+}
+
+.ce_certificate .section {
+  width: 100%;
+  margin: .75em 0;
+}
+
+.ce_certificate .section td {
+  width: auto;
+  border: none;
+}
+
+.ce_certificate .section.person {
+  margin-top: 1.25em;
+}
+
+.ce_certificate .section.footer {
+  margin-bottom: 0;
+  padding-top: .75em;
+  border-top: 2px solid black;
+}
+
+.ce_certificate .title {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.ce_certificate .signed_name {
+  border-bottom: 1px solid black;
+}
+
+.ce_certificate .printed_name,
+.ce_certificate .record_number {
+  float: left;
+}
+
+.ce_certificate .printed_name {
+  width: 70%;
+}
+
+.ce_certificate .record_number {
+  width: 30%;
+  text-align: right;
+}
+
+.ce_certificate .citation {
+  font-style: italic;
+}
+
+.ce_certificate .responsibility .credit_hours {
+  font-weight: bold;
+}
+
+.ce_certificate .print_certificate,
+.ce_failure_notice .print_failure_notice {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.ce_certificate .print_certificate a,
+.ce_failure_notice .print_failure_notice a {
+  margin: 0 .5em;
+}
+
+.ce_failure_notice .magazine_title {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.pagecontainer > .content {
+  padding-left: 127px;
+}
+
+.receipt .section {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.receipt .section td {
+  width: auto;
+  padding: 0;
+  border: none;
+  vertical-align: top;
+}
+
+.receipt .section td.label {
+  padding-right: 1em;
+  font-weight: normal;
+}
+
+.receipt .section.agreement {
+  margin-top: 2em;
+}
+
+.receipt .section.agreement,
+.receipt .section.merchant_copy {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#footer {
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 1.0em;
+  margin-bottom: 1.0em;
+}
+
+#report td{
+	color:black;
+	
+}
+
+.report_select_row td {
+	padding-top: 1em;
+}
+
+#report {
+  overflow: scroll;
+	max-height: 800px;
+}
+
+#report th,
+#report td {
+    padding: 10px;
+		border: 1px solid black;
+}
+
+#report th {
+    text-align: center;
+    background-color: #3B3B73;
+    color: white;
+}
+
+.reporting_welcome {
+	color: #00395a;
+	font-size: 20pt;
+	font-weight:bold;
+	text-align:center;
+}
+
+a.reporting_link:link, a.reporting_link:visited {
+	display: block;
+	padding: 11px;
+	color: #00395a;
+	font-size: 18pt;
+	text-decoration: none;
+	font-family: Times;
+}
+
+a.reporting_link:hover {
+	color: white;
+	background-color: #c7d4e8;
+  border: 1px solid #00395a;
+	padding: 10px;
+}

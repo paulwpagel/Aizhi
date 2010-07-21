@@ -1,0 +1,37 @@
+#intMiddle_bottom
+  #int_admin
+    #int_adminTop
+      #int_adminTitle= link_to "Admin", :controller => '/admin', :action => 'index'
+      #int_adminLeft
+        %h5 Article
+    #int_adminMiddle
+      #int_formContent
+        %br
+        %b Edit an Article
+        %br
+        %br
+        -form_tag({:action => 'update', :id => @exam}, {:multipart => true, :method => :put}) do
+          #int_formLeft
+            %p.label
+              %label{:for => :title} Title
+            %p.labelTextArea
+              %label{:for => :description} Description
+            %p.label
+              %label{:for => :authors} Authors  
+            %p.label
+              %label{:for => :document} Article  
+          #int_formMid
+            #int_formInput
+              = text_field :article, :title, :size => 20
+              = error_message_on :article, :title
+            #int_formTextArea
+              = text_area(:article, :description, :cols => 50, :rows => 5)
+              = error_message_on :article, :description
+            #int_formInput
+              = text_field :article, :authors, :size => 20
+              = error_message_on :article, :authors
+            #int_formInput
+              = file_field :article, :article
+              = error_message_on :article, :article_file_name
+            #int_formInput
+              %input{:type => :submit, :value => "Update" }
